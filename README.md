@@ -79,6 +79,14 @@ So that I can increase profits,
 I can set a higher charge for large cars
 ```
 
-Contributors
+## Technologies
+
+The application was made with Javascript and Jasmine.
+
+## Testing
+
+The development process followed a TDD approach with the development of feature tests. 
+
+## Contributors
 
 This work was collaborated with Nabil Far.
