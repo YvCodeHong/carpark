@@ -3,6 +3,7 @@
 function Carpark() {
     this.storage = [];
     this.car = new Car();
+    this.fee = 10
 }
 
 
@@ -11,9 +12,14 @@ Carpark.prototype.showCarpark = function() {
 };
 
 Carpark.prototype.park = function() {
-  var car = this.car;
-   this.storage.push(car);
-return this.storage;
+   this.storage.push(this.car);
+};
 
 
+Carpark.prototype.getFee = function() {
+  return this.fee
+};
+
+Carpark.prototype.payCash = function() {
+  return this.fee - 10
 };

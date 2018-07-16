@@ -19,6 +19,14 @@ beforeEach(function () {
      expect(carpark.storage).toContain(car);
    });
 
+   it('should see the fee for parking', function() {
+      expect(carpark.getFee()).toEqual(10);
+    });
+
+    it('pay fee using cash', function() {
+       expect(carpark.payCash()).toEqual(0);
+     });
+
 
 
 });
