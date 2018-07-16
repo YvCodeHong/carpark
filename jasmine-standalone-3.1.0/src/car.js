@@ -1,7 +1,6 @@
 'use strict';
-//
-// function Car() {}
-//
+
+function Car() {}
+
 // Car.prototype.park = function(carpark) {
 //   carpark.clearToPark(this);
-// };

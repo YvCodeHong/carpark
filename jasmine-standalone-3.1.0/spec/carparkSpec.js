@@ -1,18 +1,24 @@
 'use strict';
 
 describe('Carpark', function() {
+
   var carpark;
-  // var car;
+  var car;
 
 beforeEach(function () {
     carpark = new Carpark();
-    // car = jasmine.createSpy('car', ['park']);
+    car = new Car();
   });
+
  it('has no cars by default', function() {
-    expect(carpark.showCarPark()).toEqual([]);
+    expect(carpark.showCarpark()).toEqual([]);
   });
-//   it('can clear cars for parking', function() {
-//     carpark.clearToPark(car);
-//     expect(carpark.car()).toEqual([car]);
-//   });
+
+  it('should park the car', function() {
+      carpark.park()
+     expect(carpark.storage).toContain(car);
+   });
+
+
+
 });

@@ -1,19 +1,19 @@
 'use strict';
 
 function Carpark() {
-    this.car = [];
+    this.storage = [];
+    this.car = new Car();
 }
 
 
-
-Carpark.prototype.showCarPark = function() {
-  return this.car
+Carpark.prototype.showCarpark = function() {
+  return this.storage
 };
 
-ß
+Carpark.prototype.park = function() {
+  var car = this.car;
+   this.storage.push(car);
+return this.storage;
 
 
-
-// Carpark.prototype.clearToPark = function(car) {
-//  carpark.clearToPark(this);
-// };
+};
